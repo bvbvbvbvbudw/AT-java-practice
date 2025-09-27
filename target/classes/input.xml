@@ -1,9 +1,9 @@
-<person>
-    <name>John</name>
-    <age>30</age>
-    <isMarried>true</isMarried>
-    <address>
-        <city>New York</city>
-        <state>NY</state>
-    </address>
-</person>
+<fruitBasket>
+    <fruits>
+        <fruit>apple</fruit>
+        <fruit>banana</fruit>
+        <fruit>orange</fruit>
+    </fruits>
+    <isTasty>true</isTasty>
+    <type>citrus</type>
+</fruitBasket>
