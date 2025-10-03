@@ -1,0 +1,9 @@
+<FruitBasket>
+  <tasty>true</tasty>
+  <type>tropical</type>
+  <fruits>
+    <fruit>apple</fruit>
+    <fruit>banana</fruit>
+    <fruit>orange</fruit>
+  </fruits>
+</FruitBasket>
