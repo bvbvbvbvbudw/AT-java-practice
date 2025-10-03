@@ -4,6 +4,6 @@
         <fruit>banana</fruit>
         <fruit>orange</fruit>
     </fruits>
-    <isTasty>true</isTasty>
+    <tasty>true</tasty>
     <type>citrus</type>
 </fruitBasket>

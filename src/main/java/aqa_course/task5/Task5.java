@@ -12,14 +12,14 @@ public class Task5 {
         ObjectMapper mapper = new ObjectMapper();
         XmlMapper xmlMapper = new XmlMapper();
 
-        FruitBasket basket = mapper.readValue(new File("java/aqa_course/task5/input.json"), FruitBasket.class);
+        FruitBasket basket = mapper.readValue(new File("src/main/java/aqa_course/task5/input.json"), FruitBasket.class);
         basket.setType("exotic");
         basket.setTasty(false);
-        mapper.writerWithDefaultPrettyPrinter().writeValue(new File("java/aqa_course/task5/output.json"), basket);
+        mapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/java/aqa_course/task5/output.json"), basket);
 
-        FruitBasket basketXml = xmlMapper.readValue(new File("java/aqa_course/task5/input.xml"), FruitBasket.class);
+        FruitBasket basketXml = xmlMapper.readValue(new File("src/main/java/aqa_course/task5/input.xml"), FruitBasket.class);
         basketXml.setType("tropical");
-        xmlMapper.writerWithDefaultPrettyPrinter().writeValue(new File("java/aqa_course/task5/output.xml"), basketXml);
+        xmlMapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/java/aqa_course/task5/output.xml"), basketXml);
 
         List<FruitBasket> list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {

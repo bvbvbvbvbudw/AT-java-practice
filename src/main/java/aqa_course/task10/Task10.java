@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.File;
+import java.util.List;
 
 public class Task10 {
     public static void main(String[] args) throws InterruptedException {
@@ -21,13 +22,17 @@ public class Task10 {
 
         WebElement logo = driver.findElement(By.id("nava"));
         WebElement phoneCategory = driver.findElement(By.linkText("Phones"));
-        WebElement signUpButton = driver.findElement(By.id("signin2"));
-
+//        WebElement signUpButton = driver.findElement(By.id("signin2"));
         phoneCategory.click();
         Thread.sleep(1000);
 
-        signUpButton.click();
-        Thread.sleep(1000);
+        WebElement tablePhones = driver.findElement(By.id("tbodyid"));
+        List<WebElement> phoneCards = tablePhones.findElements(By.cssSelector("div.col-lg-4.col-md-6.mb-4"));
+        WebElement firstCardLink = phoneCards.getFirst().findElement(By.cssSelector("div.card.h-100 a"));
+        if(!phoneCards.isEmpty()) firstCardLink.click();
+        Thread.sleep(2000);
+//        signUpButton.click();
+//        Thread.sleep(1000);
 
         driver.quit();
     }

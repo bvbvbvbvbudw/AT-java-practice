@@ -9,17 +9,17 @@ public class FruitBasket implements Serializable {
     @JacksonXmlElementWrapper(localName = "fruits")
     @JacksonXmlProperty(localName = "fruit")
     private List<String> fruits;
-    private boolean isTasty;
+    private boolean tasty;
     private String type;
 
     public List<String> getFruits() { return fruits; }
     public void setFruits(List<String> fruits) { this.fruits = fruits; }
-    public boolean isTasty() { return isTasty; }
-    public void setTasty(boolean tasty) { isTasty = tasty; }
+    public boolean isTasty() { return tasty; }
+    public void setTasty(boolean tasty) { this.tasty = tasty; }
     public String getType() { return type; }
     public void setType(String type) { this.type = type; }
 
     public String toString() {
-        return "FruitBasket{" + "fruits=" + fruits + ", isTasty=" + isTasty + ", type='" + type + '\'' + '}';
+        return "FruitBasket{" + "fruits=" + fruits + ", isTasty=" + tasty + ", type='" + type + '\'' + '}';
     }
 }

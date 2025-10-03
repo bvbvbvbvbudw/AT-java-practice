@@ -1,5 +1,5 @@
 {
   "fruits": ["apple", "banana", "orange"],
-  "isTasty": true,
+  "tasty": true,
   "type": "citrus"
 }
