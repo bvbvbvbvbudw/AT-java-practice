@@ -21,6 +21,4 @@ public class FruitBasket {
         this.isTasty = isTasty;
         this.owner = owner;
     }
-
-    // геттеры/сеттеры
 }

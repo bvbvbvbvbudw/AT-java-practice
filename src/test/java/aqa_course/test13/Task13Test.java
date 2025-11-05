@@ -1,4 +1,4 @@
-package aqa_course.test14;
+package aqa_course.test13;
 
 import aqa_course.task12.SignUpBusinessObject;
 import aqa_course.task13.CustomListener;
@@ -11,7 +11,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 @Listeners(CustomListener.class)
-public class Task12Test {
+public class Task13Test {
     WebDriver driver;
 
     @BeforeTest
